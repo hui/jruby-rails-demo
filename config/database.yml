@@ -11,8 +11,8 @@
 development:
   adapter: mysql
   database: jruby-rails-demo_development
-  username: root
-  password:
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,6 +28,6 @@ test:
 production:
   adapter: mysql
   database: jruby-rails-demo_production
-  username: root
-  password:
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
   host: localhost
