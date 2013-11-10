@@ -41,3 +41,14 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
+gem "torquebox", "3.0.0"
+gem "torquebox-server"
+
+group :development do
+  gem 'jruby-jars'
+end
+
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
+gem 'simple_form'
+gem 'carrierwave'
