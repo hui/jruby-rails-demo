@@ -52,3 +52,4 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem 'simple_form'
 gem 'carrierwave'
+gem 'carrierwave-qiniu'
